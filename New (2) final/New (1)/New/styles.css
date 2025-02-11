@@ -1,0 +1,457 @@
+/* General Reset */
+/* Welcome Section */
+.top-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #1f2937;
+  color: white;
+  padding: 10px 0;
+  z-index: 1000;
+}
+.top-bar nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.top-bar nav .logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.top-bar nav .logo .icon {
+  margin-right: 0.5rem;
+}
+.top-bar nav .menu {
+  display: flex;
+  gap: 20px;
+  align-items: center; /* Ensure all items align vertically */
+}
+.top-bar nav .menu a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+.top-bar nav .menu a:hover {
+  background-color: #2563eb;
+}
+
+/* Dropdown Styles */
+.dropdown {
+  position: relative;
+}
+.dropdown .dropbtn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  text-align: left; /* Match alignment with other menu items */
+}
+.dropdown .dropbtn:hover {
+  background-color: #2563eb;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #2d3748;
+  color: white;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  top: 100%; /* Place dropdown directly below the button */
+  left: 0;
+  overflow: hidden;
+}
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  display: block;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+.dropdown-content a:hover {
+  background-color: #4a5568;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Main Content Styles */
+main {
+  margin-top: 70px; /* Offset for navbar */
+  padding: 20px;
+  background-color: white;
+  color: black; /* Ensure text is black on white background */
+}
+.welcome-section {
+  background-color: #f1f5f9; /* Light background */
+  padding: 3rem 1.5rem;
+}
+
+.welcome-container {
+  display: flex;
+  flex-wrap: wrap; /* Ensures responsiveness */
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.welcome-text {
+  flex: 1;
+  max-width: 50%;
+  padding-right: 2rem; /* Adds spacing between text and video */
+}
+
+.welcome-text h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 1rem;
+}
+
+.welcome-text p {
+  font-size: 1rem;
+  color: #6b7280;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.welcome-video {
+  flex: 1;
+  max-width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome-video video {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding-top: 40px;
+}
+
+/* Button Styling */
+.button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.button.primary {
+  background-color: #2563eb;
+  color: #ffffff;
+}
+
+.button.primary:hover {
+  background-color: #1d4ed8;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .welcome-container {
+      flex-direction: column; /* Stack text and video vertically */
+  }
+
+  .welcome-text {
+      max-width: 100%;
+      text-align: center;
+      padding-right: 0;
+      margin-bottom: 2rem;
+  }
+
+  .welcome-video {
+      max-width: 100%;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.5;
+  background-color: #f9fafb;
+  color: #1f2937;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  background-color: #f8faff;
+  padding: 3rem 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 3rem;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  color: #1f2937;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1rem;
+  color: #6b7280;
+  margin-bottom: 2rem;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.button.primary {
+  background-color: #2563eb;
+  color: white;
+}
+
+.button.primary:hover {
+  background-color: #1d4ed8;
+}
+
+.button.secondary {
+  background-color: white;
+  color: #2563eb;
+  border: 2px solid #2563eb;
+}
+
+.button.secondary:hover {
+  background-color: #eff6ff;
+}
+
+/* Services Section */
+.services {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.services h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.service-card {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-align: left;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.service-card h3 {
+  font-size: 1.25rem;
+  color: #2563eb;
+  margin-bottom: 1rem;
+}
+
+.service-card p {
+  font-size: 0.95rem;
+  color: #6b7280;
+  margin-bottom: 1rem;
+}
+
+.button.try-now {
+  background-color: #2563eb;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.button.try-now:hover {
+  background-color: #1d4ed8;
+}
+
+/* Testimonials Section */
+.testimonials {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.testimonials h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.testimonials-container {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.testimonials {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #f9fafb; /* Light background */
+}
+
+.testimonials h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #1f2937; /* Dark text */
+}
+
+.testimonials-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.testimonial-card {
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-10px); /* Move the card upward */
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Stronger shadow */
+}
+
+.testimonial-card p {
+  color: #374151; /* Text color */
+  font-size: 1rem;
+  margin: 10px 0;
+}
+
+.testimonial-card .author {
+  font-weight: bold;
+  color: #1f2937;
+  margin-top: 10px;
+}
+
+.author {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+/* CTA Section */
+.cta {
+  text-align: center;
+  background-color: #f8faff;
+  padding: 2rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.cta h2 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.cta p {
+  font-size: 1rem;
+  color: #6b7280;
+  margin-bottom: 1.5rem;
+}
+
+.cta form {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.cta input[type="email"] {
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  width: 300px;
+}
+
+.cta button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  background-color: #2563eb;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.cta button:hover {
+  background-color: #1d4ed8;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  font-size: 0.875rem;
+  color: #6b7280;
+  padding: 1rem;
+  border-top: 1px solid #e5e7eb;
+}
+
+footer nav {
+  margin-top: 0.5rem;
+}
+
+footer nav a {
+  color: #2563eb;
+  text-decoration: none;
+  margin: 0 0.5rem;
+}
+
+footer nav a:hover {
+  text-decoration: underline;
+}
